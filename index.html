@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+    <head>
+        <title>AIDE</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="css/codemirror.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img alt="AIDE" src="..."></a>
+                    <button type="button" class="btn btn-default navbar-btn" onclick="runCode();"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Run</span></button>
+                </div>
+            </div>
+        </nav>
+        <div class="grid">
+            <div class="col-1of3">
+                <h4> HTML Vocabulary Panel </h4>
+                <div class="html-vocab-panel">
+                    <div class="col-1of6">
+                        <h5> doctype </h5>
+                        <h5> html </h5>
+                        <h5> head </h5>
+                        <h5> title </h5>
+                        <h5> base </h5>
+                        <h5> link </h5>
+                        <h5> meta </h5>
+                        <h5> style </h5>
+                        <h5> script </h5>
+                        <h5> noscript </h5>
+                        <h5> body </h5>
+                        <h5> article </h5>
+                        <h5> nav </h5>
+                        <h5> aside </h5>
+                        <h5> section </h5>
+                        <h5> header </h5>
+                        <h5> footer </h5>
+                    </div>
+                    <div class="col-1of6">
+                        <h5> h1-h6 </h5>
+                        <h5> main </h5>
+                        <h5> address </h5>
+                        <h5> p </h5>
+                        <h5> hr </h5>
+                        <h5> pre </h5>
+                        <h5> blockquote </h5>
+                        <h5> ol </h5>
+                        <h5> ul </h5>
+                        <h5> li </h5>
+                        <h5> dl, dt, dd </h5>
+                        <h5> figure </h5>
+                        <h5> figcaption </h5>
+                        <h5> div </h5>
+                        <h5> table </h5>
+                        <h5> caption </h5>
+                    </div>
+                    <div class="col-1of6">
+                        <h5> thead </h5>
+                        <h5> tbody </h5>
+                        <h5> tfoot </h5>
+                        <h5> tr</h5>
+                        <h5> th </h5>
+                        <h5> td </h5>
+                        <h5> col </h5>
+                        <h5> colgroup </h5>
+                        <h5> form </h5>
+                        <h5> fieldset </h5>
+                        <h5> legend </h5>
+                        <h5> label </h5>
+                        <h5> input </h5>
+                        <h5> button </h5>
+                        <h5> select </h5>
+                        <h5> datalist </h5>
+                    </div>
+                    <div class="col-1of6">
+                        <h5> optgroup </h5>
+                        <h5> option </h5>
+                        <h5> textarea </h5>
+                        <h5> keygen </h5>
+                        <h5> output </h5>
+                        <h5> progress </h5>
+                        <h5> meter </h5>
+                        <h5> details </h5>
+                        <h5> summary </h5>
+                        <h5> command </h5>
+                        <h5> menu </h5>
+                        <h5> del, ins </h5>
+                        <h5> img </h5>
+                        <h5> iframe </h5>
+                        <h5> embed </h5>
+                        <h5> object </h5>
+                    </div>
+                    <div class="col-1of6">
+                        <h5> param </h5>
+                        <h5> video </h5>
+                        <h5> audio </h5>
+                        <h5> source </h5>
+                        <h5> canvas </h5>
+                        <h5> track </h5>
+                        <h5> map </h5>
+                        <h5> area </h5>
+                        <h5> a </h5>
+                        <h5> em </h5>
+                        <h5> strong </h5>
+                        <h5> i, b </h5>
+                        <h5> u </h5>
+                        <h5> s </h5>
+                        <h5> small </h5>
+                        <h5> abbr </h5>
+                    </div>
+                    <div class="col-1of6">
+                        <h5>q </h5>
+                        <h5>cite </h5>
+                        <h5>dfn </h5>
+                        <h5>sub, sup </h5>
+                        <h5>time </h5>
+                        <h5>code </h5>
+                        <h5>kbd </h5>
+                        <h5>samp </h5>
+                        <h5>var </h5>
+                        <h5>mark </h5>
+                        <h5>bdi </h5>
+                        <h5>bdo </h5>
+                        <h5>ruby, rt, rp </h5>
+                        <h5>span </h5>
+                        <h5>br </h5>
+                        <h5>wbr </h5>
+                    </div>
+                </div>
+                <textarea id="editor"></textarea>
+            </div>
+            <div class="col-1of3">
+                <iframe id="code-viewer"></iframe>
+            </div>
+            <div class="col-1of3">
+                <iframe id="renderer"></iframe>
+            </div>
+        </div>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <img id="drag1" src="img/stack.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+        <script type="text/javascript" src="lib/codemirror.js"></script>
+        <script type="text/javascript" src="lib/xml.js"></script>
+        <script type="text/javascript" src="lib/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="lib/jquery.base64.min.js"></script>
+        <script type="text/javascript" src="js/editor.js"></script>
+    </body>
+</html>

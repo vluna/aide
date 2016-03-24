@@ -1,0 +1,28 @@
+/* This will add some content to the grid and display it in block */
+.grid:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+/* Box model compatile with browsers */
+*, *.after, *.before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Custom class for our columns */
+[class^='col-'] {
+	float: left;
+	padding: 0;
+	text-align: center;
+}
+
+.col-1of3 {
+	width: 33.3%;
+}
+
+.col-1of6 {
+	width: 16.66%;
+}

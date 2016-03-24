@@ -1,0 +1,51 @@
+body {
+	margin: 0 auto;
+}
+
+.navbar.navbar-default  {
+	margin: 0;
+}
+#stack {
+	width: 100%;
+	height: 300px;
+	background: white;
+}
+
+.CodeMirror {
+  border: 1px solid #eee;
+  width: 100%;
+  height: 300px;
+  background: white;
+}
+
+#renderer {
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	background: white;
+}
+
+.btn.btn-default.navbar-btn {
+	background: white;
+	color: orange;
+}
+
+.glyphicon {
+	color: orange;
+}
+
+h5 {
+	text-align: center;
+	padding-bottom: 6px;
+	color: #1180BF;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.html-vocab-panel {
+	height: 145px; 
+	overflow: hidden; 
+	overflow-y: scroll;
+}
+
+#div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
