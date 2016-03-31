@@ -5,9 +5,14 @@ body {
 .navbar.navbar-default  {
 	margin: 0;
 }
-#stack {
+
+#editor {
+	text-align: left;
+}
+
+#code-viewer {
 	width: 100%;
-	height: 300px;
+	min-height: 100%;
 	background: white;
 }
 
@@ -20,8 +25,7 @@ body {
 
 #renderer {
 	width: 100%;
-	height: 90%;
-	position: absolute;
+	min-height: 100%;
 	background: white;
 }
 
@@ -34,6 +38,10 @@ body {
 	color: orange;
 }
 
+iframe {
+	border: none;
+}
+
 h5 {
 	text-align: center;
 	padding-bottom: 6px;
@@ -43,9 +51,32 @@ h5 {
 }
 
 .html-vocab-panel {
+	background: #F7F7F7;
 	height: 145px; 
 	overflow: hidden; 
 	overflow-y: scroll;
+}
+
+.fill-right-column {
+	background: #D8D8D7;
+	border-top: 1px solid white;
+  	border-bottom: 1px solid white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	min-height: 90%;
+	left: 33%;
+	position: absolute;
+}
+
+.fill-left-column {
+	background: #D8D8D7;
+	border-top: 1px solid white;
+  	border-bottom: 1px solid white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	min-height: 90%;
+	left: 66%;
+	position: absolute;
 }
 
 #div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}

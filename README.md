@@ -9,5 +9,5 @@
 <ul>
 <li>Visualization and description of the code through the interface of the blocks of code in the Stack so end users can comprehended their code better.</li>
 <li>Templates are used so end users can start with generic code block to give guidance and lead to exploration.</li>
-</li>Stack by Stack is for a version control system that helps explore and experiment different sets of solution for an identical purpose.</li>
+<li>Stack by Stack is for a version control system that helps explore and experiment different sets of solution for an identical purpose.</li>
 </ul>
