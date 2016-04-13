@@ -115,7 +115,8 @@
                     </section>
                 </div>
                 <div id="show-block-view">
-     
+                    <section id="block-view">
+                    </section>
                 </div>
                 <div id="show-HTML-view">
                     <div id="html">
