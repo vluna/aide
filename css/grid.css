@@ -22,10 +22,18 @@
 	width: 33%;
 }
 
+.col-2of3 {
+	width: 66.5%
+}
+
 .col-fill {
 	width: .5%;
 }
 
 .col-1of6 {
 	width: 16.66%;
+}
+
+.col-1of4 {
+	width: 25%;
 }
