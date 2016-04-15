@@ -347,10 +347,6 @@ css_editor.on('change', function (inst, changes) {
     }
 });
 
-// SETTING CODE EDITORS INITIAL CONTENT
-html_editor.setValue('<p>Hello World</p>');
-css_editor.setValue('body { color: red; }');
-
 function allowDrop(ev) {
     ev.preventDefault();
 }

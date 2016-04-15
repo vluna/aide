@@ -95,14 +95,13 @@
                 </div>
                 <div id="css">
                     <h3 class="css-tabs">CSS</h3>
-                    <textarea id="h" name="css"></textarea>
+                    <textarea name="css"></textarea>
                 </div>
             </div>
             <!-- Sandboxing -->
                
             <div class="col-2of3">
                  <section id="render-panel">
-                    <iframe></iframe>
                 </section>
                 <div id="menu-code-view">
                     <button type="button" id="HTML-editor" class="btn btn-default sub-menu active">HTML</button>
@@ -115,7 +114,7 @@
                     </section>
                 </div>
                 <div id="show-block-view">
-                    <section id="block-view">
+                    <section ondrop="drop(event)" ondragover="allowDrop(event)" id="block-view">
                     </section>
                 </div>
                 <div id="show-HTML-view">
@@ -128,10 +127,6 @@
                 </div>
             </div>
         </div>
-
-        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <br>
-        <img id="drag1" src="img/stack.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
 
         <script type="text/javascript" src="lib/codemirror.js"></script>
         <script type="text/javascript" src="lib/xml.js"></script>
